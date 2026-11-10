@@ -1,0 +1,492 @@
+# Jargon HR — full text corpus
+
+Canonical: https://miaotuijian.cn/
+Last updated: 2026-11-10
+
+## 中文简介
+
+行话 HR 是免费、隐私、规则驱动的 JD 体检工具：翻译黑话、区分硬门槛与核心要求、给企业六维评分，并生成带原文依据的面试准备清单。不上传、不投递、不抓取平台。中文入口：https://miaotuijian.cn/ ；中文静态示例：https://miaotuijian.cn/examples/zh-trading.html 。
+
+## What it is
+
+Jargon HR is a free, rule-based job-description checker. It parses a JD into atomic requirements, classifies them as hard gate, core, plus, soft, or logistics, decodes jargon, scores the company on six heuristic dimensions, and builds a prep list using PrepScore = W × Q × Gap.
+
+## Method
+
+The prep score multiplies requirement weight (W), ask probability (Q), and gap (Gap). Gap combines missing evidence and the ability to explain it. Company scores cover stability, growth, management maturity, workload, pay credibility, and hiring sincerity. Market facts are jurisdiction-level defaults with source links; jargon decoding is probabilistic. Nothing is uploaded; there are no cookies or analytics.
+
+## Market packs
+
+- US: USD, Inc/LLC, 401(k), W-2 vs 1099, at-will, H-1B. Facts: 401(k), W-2/1099, H-1B.
+- UK: GBP, Ltd/PLC/LLP, Right to work, IR35, statutory holiday, pension, probation. Facts: 5.
+- Germany: EUR, GmbH/AG/KG/UG, Probezeit, Kündigungsfrist, Tarifvertrag, 13. Monatsgehalt, EU Blue Card. Facts: 3.
+- France: EUR, SAS/SARL/SA/SASU, CDI/CDD, période d’essai, RTT, mutuelle, 13e mois. Facts: 3.
+- Netherlands: EUR, BV/NV, CAO, proeftijd, vakantiegeld, 30% ruling, highly skilled migrant. Facts: 3.
+- EU fallback: EUR only; no country facts; honest note.
+
+## FAQ (English)
+
+### What is Jargon HR?
+
+Jargon HR is a free, rule-based job-description checker. It splits a JD into atomic requirements, separates hard gates from core skills and nice-to-haves, decodes HR jargon, scores the company on six heuristics, and produces an evidence-backed interview prep list. It runs entirely in your browser.
+
+### Is it free?
+
+Yes. There is no account, no paywall, no upload, and no API key. The current version is a static, rule-based MVP.
+
+### Does it upload my job description?
+
+No. The JD and the five candidate fields stay in browser memory and disappear when you refresh. There are no cookies, analytics, or server-side storage.
+
+### Which markets are supported?
+
+The English checker has US, UK, Germany, France, and Netherlands packs, plus an EU fallback for unclassified euro roles. The Chinese checker is built for mainland China tech JDs.
+
+### How is the score calculated?
+
+The prep score is W × Q × Gap. W is the requirement weight, Q is a prior on whether it gets asked, and Gap combines missing evidence with the ability to explain it. Company scores are six heuristic dimensions, not a prediction.
+
+### Is the verdict a prediction that I will get the job?
+
+No. It is a structured reading of the JD and your stated evidence. Treat it as a set of questions to verify, not a hiring decision.
+
+### What are market facts?
+
+Market facts are jurisdiction-level defaults such as statutory holiday, pension minimums, notice periods, IR35, Blue Card, or H-1B. They are separate from jargon, carry source links, and are information only, not legal advice.
+
+### Does it apply to jobs automatically?
+
+No. Jargon HR does not apply, message recruiters, scrape job boards, or automate outreach. It only reads the JD you paste.
+
+### Why do Germany, France, and the Netherlands have separate packs?
+
+Because the institutions differ: Probezeit and Kündigungsfrist in Germany, CDI/CDD and RTT in France, CAO and proeftijd in the Netherlands. Translating one country's terms into another produces false confidence.
+
+### How accurate is the jargon decoding?
+
+It is a probabilistic read based on a curated lexicon, not a fact about the company. Use the suggested interview questions to verify. The same applies to company scores.
+
+## 常见问题（中文）
+
+### 行话 HR 是什么？
+
+行话 HR 是一个免费、规则驱动的岗位描述体检工具。它把 JD 拆成原子要求，区分硬门槛、核心能力与加分项，解码 HR 黑话，给出企业六维评分，并生成带原文依据的面试准备清单。全部在浏览器内完成。
+
+### 会上传我的 JD 吗？
+
+不会。JD 和五个候选人字段只存在浏览器内存，刷新即失。没有 Cookie、统计、账号或服务端存储。
+
+### 支持哪些市场？
+
+英文版覆盖美国、英国、德国、法国、荷兰，另有欧元区兜底；中文版面向中国大陆互联网/科技岗位。
+
+### 分数是怎么算的？
+
+准备分 = W × Q × Gap。W 是要求权重，Q 是被问概率先验，Gap 同时考虑证据缺口和表达缺口。企业分是六个启发式维度，不是录用预测。
+
+### 会帮我自动投递吗？
+
+不会。不投递、不打招呼、不抓取平台、不自动化联系招聘者。它只读你粘贴的那一段 JD。
+
+## Glossary
+
+### Jargon HR (行话 HR)
+
+Jargon HR is a rule-based job-description checker that translates hiring jargon, separates hard gates from core skills and nice-to-haves, scores the company on six heuristics, and builds an evidence-backed interview prep list.
+
+中文：行话 HR 是规则驱动的 JD 体检工具：翻译黑话、区分硬门槛与核心要求、做企业六维评分，并生成带原文依据的面试准备清单。
+
+Why it matters: It turns a long, euphemistic JD into a small set of decisions: can I apply, what will be tested, and what should I prepare first.
+
+Example: Paste a JD and get a verdict, a requirement table, a jargon decoder, market facts, and a tiered prep list.
+
+### Job-description parsing (JD 解析)
+
+JD parsing splits a job description into sections, then into atomic requirements that can each be classified, matched, and scored.
+
+中文：把岗位描述先分节、再拆成可分类、可匹配、可评分的原子要求。
+
+Why it matters: A single bullet often mixes a hard gate, a tool, and a nice-to-have; treating the bullet as one unit hides which part actually matters.
+
+Example: “5+ years Java, Kafka, and a Master’s degree” becomes three requirements with different types and weights.
+
+### Market pack (市场包)
+
+A market pack is a country-specific bundle of currency parsing, city and legal-form detection, local jargon, statutory facts, and scoring adjustments.
+
+中文：按国家打包的货币、城市/法律实体识别、本土黑话、法定事实与评分调整。
+
+Why it matters: Institutions differ; a German Probezeit or a Dutch proeftijd is not the same thing as a UK probation clause.
+
+Example: The UK pack knows Right to work and IR35; the German pack knows Probezeit and Tarifvertrag.
+
+### Industry overlay (行业包)
+
+An industry overlay adds sector-specific signals and a light scoring adjustment on top of a market pack, without duplicating the country data.
+
+中文：在市场包之上叠加行业信号和轻量评分调整，不复制国家数据。
+
+Why it matters: A finance KYC requirement and a healthcare credentialing requirement are different bottlenecks even in the same country.
+
+Example: Finance adds KYC/AML/SOX; sales adds quota/commission/territory; public sector adds clearance and GS grades.
+
+### Facts layer (事实层)
+
+The facts layer contains jurisdiction-level defaults such as statutory holiday, pension minimums, notice periods, IR35, Blue Card, and H-1B, each with a source link.
+
+中文：带官方来源的法定默认值，如法定假期、养老金、notice、IR35、Blue Card、H-1B。
+
+Why it matters: Facts are stable-ish and verifiable; jargon is probabilistic. Mixing them creates false confidence.
+
+Example: The UK pack links GOV.UK and HMRC; the German pack links BUrlG, BGB, and Make it in Germany.
+
+### Hard gate (硬门槛)
+
+A hard gate is a requirement that can stop an application before skills are assessed, such as work authorization, a required license, a degree level, or a minimum number of years.
+
+中文：在评估能力前就能让申请出局的硬性条件，如工作许可、执照、学历、最低年限。
+
+Why it matters: Missing a hard gate makes prep irrelevant until the gate is solved or explicitly waived.
+
+Example: “Must have the right to work in the UK” or “Master’s degree required” is a hard gate; “Kafka is a plus” is not.
+
+### Core requirement (核心要求)
+
+A core requirement is a capability the role is actually hired for; it usually drives interview depth and leveling, even when the JD does not use the word “required”.
+
+中文：岗位真正招人要看的能力，通常决定面试深度和定级。
+
+Why it matters: Core requirements deserve evidence and rehearsal; nice-to-haves only break ties.
+
+Example: For a backend role, “owns services end to end” and “expert in Java or Kotlin” are core.
+
+### Nice-to-have (加分项)
+
+A nice-to-have is a preferred signal that is not expected to be met by every qualified candidate.
+
+中文：不是每个合格候选人都必须具备的偏好项。
+
+Why it matters: It should not dominate prep time; it matters as a tie-breaker after hard gates and core skills.
+
+Example: “DDD experience” or “payments background” is usually a plus, not a gate.
+
+### Prep score (准备分)
+
+Prep score = W × Q × Gap. W is the requirement weight, Q is a prior on the probability it gets asked, and Gap combines missing evidence with the ability to explain it.
+
+中文：准备分 = W × Q × Gap：权重 × 被问概率先验 × 证据/表达缺口。
+
+Why it matters: It ranks preparation by leverage, not by how scary a bullet sounds.
+
+Example: A core requirement with weak evidence and a hard gate both score high, but for different reasons.
+
+### Evidence gap (证据缺口)
+
+An evidence gap means you may have the experience but the JD or your materials contain no concrete proof of it.
+
+中文：可能有经验，但 JD 或你的材料里没有具体证据。
+
+Why it matters: Interviewers ask for examples; a claim without a metric, scope, or trade-off is hard to defend.
+
+Example: “Worked on Kafka” is weaker than “ran 12 Kafka partitions at 8k events/s with a 200ms p99”.
+
+### Articulation gap (表达缺口)
+
+An articulation gap means the evidence exists but you cannot yet explain it clearly, concisely, or in the interviewer’s language.
+
+中文：证据存在，但还不能清楚、简洁地用面试官的语言讲出来。
+
+Why it matters: A strong project with a rambling story still reads as weak signal.
+
+Example: You built the system but cannot explain the trade-off between consistency and latency in two minutes.
+
+### Company check (企业体检)
+
+The company check scores stability, growth, management maturity, workload, pay credibility, and hiring sincerity from signals in the JD.
+
+中文：从 JD 信号给稳定性、成长性、管理成熟度、工作强度、薪资可信度、招聘诚意打分。
+
+Why it matters: A role can be a good skill match and still be a bad bet; the six dimensions make that trade-off explicit.
+
+Example: Urgent hiring plus a vague scope and no reporting line lowers hiring sincerity and management maturity.
+
+### Ask probability (Q) (被问概率)
+
+Q is a prior estimate of how likely a requirement is to be probed in an interview, based on its type and how central it is to the role.
+
+中文：某条要求在实际面试中被追问的概率先验。
+
+Why it matters: Not every line in a JD is tested; Q keeps the prep list from becoming a 40-item slog.
+
+Example: A hard gate may be checked by HR; a core skill is likely to get a deep technical question.
+
+### Right to work (工作许可)
+
+Right to work is the UK employer’s legal duty to check that a person is allowed to work before employment starts; sponsorship changes the check and the candidate pool.
+
+中文：英国雇主在入职前必须核验工作许可；需要 sponsorship 时门槛和候选人范围都会变。
+
+Why it matters: It is a hard gate that no amount of technical skill can waive.
+
+Example: “Must have the right to work in the UK; no sponsorship” means the role is closed to candidates who need a visa.
+
+### IR35 (IR35 off-payroll)
+
+IR35 is the UK’s off-payroll working rule set, determining whether a contractor engaged through an intermediary is effectively an employee for tax purposes.
+
+中文：英国 off-payroll 规则，判断通过中介合作的承包商在税务上是否实质为雇员。
+
+Why it matters: It changes take-home pay, contract structure, and who bears the compliance burden.
+
+Example: A “day rate outside IR35” contract can be worth materially more than an inside-IR35 one.
+
+### Probezeit (试用期)
+
+Probezeit is the German probation period; it is commonly up to six months, and notice during probation can be shorter than the statutory notice after it.
+
+中文：德国试用期，常见最长 6 个月；试用期内的解约通知期可能短于正式期。
+
+Why it matters: It is the easiest exit for either side, and it changes how much notice you have.
+
+Example: A six-month Probezeit with two weeks’ notice is a different risk from a permanent contract with three months’ notice.
+
+### Kündigungsfrist (解约通知期)
+
+Kündigungsfrist is the German notice period; the statutory baseline is four weeks to the end of a month, but a contract or Tarifvertrag can extend it.
+
+中文：德国解约通知期；法定基线是月底前 4 周，合同或集体协议可以延长。
+
+Why it matters: Notice affects start dates, visa timing, and how quickly you can leave a bad role.
+
+Example: “3 Monate zum Quartalsende” means three months to the end of a quarter, not three months from today.
+
+### Tarifvertrag (集体协议)
+
+A Tarifvertrag is a collective agreement between an employer or employers’ association and a union, setting pay, hours, leave, and other terms.
+
+中文：德国雇主/雇主协会与工会签订的集体协议，规定薪资、工时、假期等。
+
+Why it matters: It can improve or constrain the offer beyond the individual contract, and it is a stability signal.
+
+Example: A Tarifvertrag may add 13th-month pay, extra holiday, or a works council framework.
+
+### CDI / CDD (法国长期/短期合同)
+
+CDI is the French permanent employment contract; CDD is a fixed-term contract with legally limited renewal and termination rules.
+
+中文：CDI 是法国长期合同，CDD 是有严格续签/终止规则的短期合同。
+
+Why it matters: The contract type changes stability, loan eligibility, notice, and what “permanent” means in the offer.
+
+Example: A CDD with a six-month term is not equivalent to a CDI even if the day-to-day work is the same.
+
+### RTT (工时减让假)
+
+RTT (réduction du temps de travail) is extra paid time off earned by employees whose working time exceeds the statutory 35-hour week.
+
+中文：法国每周超过 35 小时法定工时后累积的额外带薪假。
+
+Why it matters: It can add 10–20 days off per year, and it is often omitted from English summaries of the offer.
+
+Example: A 39-hour contract may come with around 12 RTT days on top of five weeks’ holiday.
+
+### CAO (荷兰集体协议)
+
+A CAO (collectieve arbeidsovereenkomst) is a Dutch collective labour agreement that sets minimum terms for a sector or company.
+
+中文：荷兰行业或公司的集体劳动协议，规定该领域的最低雇佣条件。
+
+Why it matters: It can override or supplement the individual contract, including pay scales, leave, and probation.
+
+Example: “CAO applies” means the offer is not fully negotiable on every term.
+
+### Proeftijd (荷兰试用期)
+
+Proeftijd is the Dutch probation period; it is capped at two months for a permanent contract, one month for a fixed term of 6–24 months, and is not allowed for contracts under six months.
+
+中文：荷兰试用期；长期合同最多 2 个月，6–24 个月合同最多 1 个月，6 个月以下不得约定。
+
+Why it matters: An illegal or overlong probation clause is a red flag and may be unenforceable.
+
+Example: A two-month proeftijd on a one-year contract is longer than the statutory maximum.
+
+### Vakantiegeld (假期津贴)
+
+Vakantiegeld is the Dutch holiday allowance, usually 8% of gross annual salary, typically paid in May or June.
+
+中文：荷兰假期津贴，通常为年薪的 8%，多在 5/6 月发放。
+
+Why it matters: It is a real part of total compensation and is often left out of English salary comparisons.
+
+Example: A €60,000 salary plus 8% vakantiegeld is roughly €64,800 gross before other allowances.
+
+### 30% ruling (30% 外籍人才税收优惠)
+
+The 30% ruling is a Dutch tax facility for eligible incoming employees, allowing a portion of salary to be paid tax-free; the rate and conditions have changed over time.
+
+中文：荷兰针对符合条件的外籍员工的税收优惠，部分薪资可免税；比例和条件会调整。
+
+Why it matters: It materially changes net pay and is often mentioned in offers without explaining eligibility.
+
+Example: “30% ruling possible” is not a guarantee; the employer and employee must meet the conditions.
+
+### EU Blue Card (欧盟蓝卡)
+
+The EU Blue Card is a work-and-residence permit for qualified non-EU workers, with salary and qualification thresholds set by the member state.
+
+中文：面向非欧盟高技能人才的欧盟工作/居留许可，薪资和学历门槛由各成员国设定。
+
+Why it matters: It is a hard gate for non-EU candidates, and the employer usually has to drive the application.
+
+Example: A German Blue Card requires a recognized qualification and a salary above the annual threshold.
+
+### At-will employment (自由雇佣)
+
+At-will employment means either the employer or the employee can end the relationship at any time for any lawful reason, subject to exceptions and contracts.
+
+中文：美国自由雇佣：雇主或员工可在合法范围内随时终止关系，除非合同/法律另有规定。
+
+Why it matters: It changes job security and severance expectations compared with notice-based systems.
+
+Example: “At-will” does not mean anything goes; anti-discrimination and contract terms still apply.
+
+### W-2 vs 1099 (雇员 vs 独立承包商)
+
+W-2 workers are employees with payroll withholding and benefits; 1099 workers are independent contractors responsible for their own taxes and benefits.
+
+中文：W-2 是雇员（代扣税、福利），1099 是独立承包商（自行报税、无福利）。
+
+Why it matters: The same headline rate can be worth very different amounts after taxes, benefits, and unpaid time.
+
+Example: A 1099 role at $80/hour may net less than a W-2 role at $60/hour with benefits.
+
+### 401(k) (美国退休账户)
+
+A 401(k) is a US employer-sponsored retirement account; employer matching is part of compensation but often vests over time.
+
+中文：美国雇主提供的退休账户；雇主 match 属于薪酬，但通常有归属期。
+
+Why it matters: Match and vesting can add meaningful value that a base-salary comparison misses.
+
+Example: A 5% match on a $150,000 salary is $7,500 a year before growth.
+
+### H-1B (美国高技能工作签证)
+
+The H-1B is a US specialty-occupation work visa; it is subject to an annual cap and a lottery, and the employer files the petition.
+
+中文：美国高技能专业岗位工作签证，有年度配额和抽签，由雇主提交申请。
+
+Why it matters: It is a hard gate with timing risk; “we sponsor” is not the same as “we will file this year”.
+
+Example: A role that requires H-1B sponsorship may be closed even if the technical match is strong.
+
+### 抗压 (kàng yā) (抗压)
+
+抗压 literally means “stress resistance”; in Chinese JDs it often signals high pressure, long hours, or frequent priority changes without saying so directly.
+
+中文：“抗压”字面是承受压力，JD 里常暗示高压、长工时或频繁变需求。
+
+Why it matters: It is a workload signal, not a personality requirement; ask what a normal week looks like.
+
+Example: “抗压能力强，能适应快节奏” is a prompt to ask about hours, on-call, and deadline frequency.
+
+### 五险一金 (五险一金)
+
+五险一金 is the Chinese statutory social-insurance and housing-fund package: pension, medical, unemployment, work injury, maternity, and the housing provident fund.
+
+中文：中国法定社保与住房公积金：养老、医疗、失业、工伤、生育 + 公积金。
+
+Why it matters: It is a large part of real compensation, and the contribution base matters more than the headline salary.
+
+Example: “五险一金全额缴纳” is stronger than “按最低基数缴纳”.
+
+### 统招 (tǒng zhāo) (统招)
+
+统招 refers to full-time higher-education admission through the national entrance exam; many Chinese JDs use it as a hard degree filter.
+
+中文：通过全国统一招生考试的全日制学历；很多 JD 把它当硬性学历筛选。
+
+Why it matters: It can screen out otherwise qualified candidates, including many self-taught or part-time-degree engineers.
+
+Example: “统招本科及以上” is a gate that may be stricter than “本科及以上”.
+
+### 大小周 (大小周)
+
+大小周 is a schedule that alternates a five-day week and a six-day week, usually without extra pay.
+
+中文：一周双休、一周单休交替的工作节奏，通常没有额外报酬。
+
+Why it matters: It adds roughly two extra working days a month and is a concrete workload signal.
+
+Example: “大小周” means you should ask which weeks are six-day and whether overtime is paid.
+
+## Example reports
+
+- US · SaaS backend: https://miaotuijian.cn/examples/us-saas.html
+- UK · Fintech backend: https://miaotuijian.cn/examples/uk-fintech.html
+- Germany · Payments backend: https://miaotuijian.cn/examples/de-payments.html
+- France · Payments backend: https://miaotuijian.cn/examples/fr-payments.html
+- Netherlands · Payments backend: https://miaotuijian.cn/examples/nl-payments.html
+- EU · Generic platform backend: https://miaotuijian.cn/examples/eu-generic.html
+- 中国 · 交易后端: https://miaotuijian.cn/examples/zh-trading.html
+
+## Comparisons
+
+### Jargon HR vs ChatGPT for job-description analysis
+
+ChatGPT is a general reasoning assistant; Jargon HR is a narrow, deterministic JD checker. The useful workflow is usually Jargon HR first for structure, then ChatGPT to rehearse the answers.
+
+Bottom line: Do not treat them as substitutes. Jargon HR gives you the map; ChatGPT is useful for rehearsing the route. Verify any factual claim against the linked source.
+
+### Jargon HR vs preparing manually
+
+Manual preparation gives better judgment and recall; the tool gives speed, consistency, and a checklist you can audit. Use the tool for triage, then spend the saved time on evidence and rehearsal.
+
+Bottom line: The tool is a forcing function, not a replacement for judgment. If the JD is ambiguous, write down what you would need to ask a recruiter.
+
+### Jargon HR vs resume/JD keyword tools
+
+Resume tools optimize how well your CV matches keywords. Jargon HR reads the role, the company, and the market facts, then tells you what to prepare. They solve different problems.
+
+Bottom line: A high keyword match is not a good job. Understand the role first, then optimize the application for the requirements that survived the filter.
+
+## Public data
+
+- Glossary JSON: https://miaotuijian.cn/data/glossary.json
+- Market facts JSON: https://miaotuijian.cn/data/market-facts.json
+- Example metadata JSON: https://miaotuijian.cn/data/examples.json
+
+License: editorial content; cite Jargon HR and link to the canonical URL. Not legal advice.
+
+## Editorial policy and AI disclosure
+
+Jargon HR is an independent, rule-based tool. Product behavior is deterministic. Editorial pages are drafted with AI assistance and checked against linked official sources. No invented author biographies are published. The site does not provide legal, tax or immigration advice. Corrections: update the source-linked content, rebuild with node scripts/build-static.cjs, and redeploy.
+
+## Changelog
+
+### 2026-11-10 — Custom domain + P0 GEO
+
+- Moved the canonical host to https://miaotuijian.cn with apex + www certificates.
+- Added 7 static example reports, 33 glossary terms, FAQ, sitemap, llms.txt, llms-full.txt and JSON-LD.
+- Added comparison pages, editorial policy, changelog and public JSON datasets.
+
+### 2026-11-08 — Production hardening
+
+- CSP, HSTS, frame/referrer/permissions policies.
+- Custom 404, method/privacy page, input cap and error handling.
+- Preflight script and deployment checklist.
+
+### 2026-11-08 — Market and industry packs
+
+- US, UK, Germany, France, Netherlands and EU fallback.
+- Tech, finance, healthcare, sales, consulting, manufacturing and public-sector overlays.
+- Facts layer with official source links.
+
+### 2026-11-08 — MVP
+
+- Rule-based JD parser, company check, jargon decoder and tiered prep list.
+- Chinese and English pages; no account, upload, analytics or LLM.
+
+## Citation
+
+Cite “Jargon HR” and the canonical URL. Definitions and scores are editorial/heuristic, not legal advice.

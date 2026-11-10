@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "If you use this data, cite Jargon HR and link to https://miaotuijian.cn/data/."
+title: "Jargon HR public data"
+type: dataset
+authors:
+  - name: "Jargon HR"
+    website: "https://miaotuijian.cn/"
+date-released: 2026-11-10
+url: "https://miaotuijian.cn/data/"
+repository-code: "https://github.com/vickeyfeng/jargon-hr-data"
+license: CC-BY-4.0
+abstract: "33-term bilingual glossary, 17 market facts with official sources, and example-report metadata behind the Jargon HR job-description checker."

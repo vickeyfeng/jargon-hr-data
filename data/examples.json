@@ -1,0 +1,71 @@
+{
+  "name": "Jargon HR example reports",
+  "canonical": "https://miaotuijian.cn/examples/",
+  "lastUpdated": "2026-11-10",
+  "license": "Editorial content. Cite Jargon HR and link to the canonical URL. Not legal advice.",
+  "examples": [
+    {
+      "slug": "us-saas",
+      "label": "US · SaaS backend",
+      "url": "https://miaotuijian.cn/examples/us-saas.html",
+      "role": "Senior Backend Engineer (Payments)",
+      "company": "Northstar Commerce",
+      "companyScore": 61,
+      "fitScore": 92
+    },
+    {
+      "slug": "uk-fintech",
+      "label": "UK · Fintech backend",
+      "url": "https://miaotuijian.cn/examples/uk-fintech.html",
+      "role": "Senior Backend Engineer (Payments)",
+      "company": "Thames Pay Ltd",
+      "companyScore": 57,
+      "fitScore": 92
+    },
+    {
+      "slug": "de-payments",
+      "label": "Germany · Payments backend",
+      "url": "https://miaotuijian.cn/examples/de-payments.html",
+      "role": "Senior Backend Engineer (Payments)",
+      "company": "Rhein Payments GmbH",
+      "companyScore": 64,
+      "fitScore": 90
+    },
+    {
+      "slug": "fr-payments",
+      "label": "France · Payments backend",
+      "url": "https://miaotuijian.cn/examples/fr-payments.html",
+      "role": "Senior Backend Engineer (Payments)",
+      "company": "Lumière Pay SAS",
+      "companyScore": 62,
+      "fitScore": 90
+    },
+    {
+      "slug": "nl-payments",
+      "label": "Netherlands · Payments backend",
+      "url": "https://miaotuijian.cn/examples/nl-payments.html",
+      "role": "Senior Backend Engineer (Payments)",
+      "company": "Delft Pay B.V.",
+      "companyScore": 63,
+      "fitScore": 90
+    },
+    {
+      "slug": "eu-generic",
+      "label": "EU · Generic platform backend",
+      "url": "https://miaotuijian.cn/examples/eu-generic.html",
+      "role": "Senior Backend Engineer (Platform)",
+      "company": "Iberia Pay S.L.",
+      "companyScore": 62,
+      "fitScore": 88
+    },
+    {
+      "slug": "zh-trading",
+      "label": "中国 · 交易后端",
+      "url": "https://miaotuijian.cn/examples/zh-trading.html",
+      "role": "高级后端工程师（交易方向）",
+      "company": "云栖智联",
+      "companyScore": 62,
+      "fitScore": 89
+    }
+  ]
+}

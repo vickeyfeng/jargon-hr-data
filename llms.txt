@@ -1,0 +1,62 @@
+# Jargon HR
+
+> Free, private, rule-based job-description checker. It translates hiring jargon, separates hard gates from core skills, scores the company on six heuristics, and builds an evidence-backed interview prep list. No account, no upload, no auto-apply.
+
+Canonical: https://miaotuijian.cn/
+Last updated: 2026-11-10
+
+## 中文
+
+行话 HR 是免费、隐私、规则驱动的 JD 体检工具：翻译黑话、区分硬门槛与核心要求、给企业六维评分，并生成带原文依据的面试准备清单。不上传、不投递、不抓取平台。中文入口：https://miaotuijian.cn/ ；中文静态示例：https://miaotuijian.cn/examples/zh-trading.html 。
+
+## Core pages
+
+- [Chinese checker](https://miaotuijian.cn/): paste a Chinese JD; 24-requirement sample, company score, prep list.
+- [English checker](https://miaotuijian.cn/en/): US, UK, Germany, France, Netherlands, EU fallback; market selector and industry overlay.
+- [Method, limits & privacy](https://miaotuijian.cn/about.html): scoring formula, fact sources, no-cookie/no-analytics policy.
+- [FAQ](https://miaotuijian.cn/faq.html): 15 short answers in English and Chinese.
+- [Glossary](https://miaotuijian.cn/glossary/): 33 hiring and job-market terms with definitions.
+- [Comparisons](https://miaotuijian.cn/compare/): Jargon HR vs ChatGPT, manual prep, and resume keyword tools.
+- [Public data](https://miaotuijian.cn/data/): glossary, market facts and example metadata as JSON.
+- [Editorial policy](https://miaotuijian.cn/editorial.html): authorship, AI disclosure, fact review and limits.
+- [Changelog](https://miaotuijian.cn/changelog.html): dated product, content and domain changes.
+- [Full text corpus](https://miaotuijian.cn/llms-full.txt): method, market packs, FAQ, glossary and example summaries in one file.
+
+## Comparisons
+
+- [Jargon HR vs ChatGPT for job-description analysis](https://miaotuijian.cn/compare/chatgpt.html)
+- [Jargon HR vs preparing manually](https://miaotuijian.cn/compare/manual-prep.html)
+- [Jargon HR vs resume/JD keyword tools](https://miaotuijian.cn/compare/resume-tools.html)
+
+## Public data
+
+- [Glossary JSON](https://miaotuijian.cn/data/glossary.json)
+- [Market facts JSON](https://miaotuijian.cn/data/market-facts.json)
+- [Example metadata JSON](https://miaotuijian.cn/data/examples.json)
+
+## Example reports
+
+- [US · SaaS backend](https://miaotuijian.cn/examples/us-saas.html)
+- [UK · Fintech backend](https://miaotuijian.cn/examples/uk-fintech.html)
+- [Germany · Payments backend](https://miaotuijian.cn/examples/de-payments.html)
+- [France · Payments backend](https://miaotuijian.cn/examples/fr-payments.html)
+- [Netherlands · Payments backend](https://miaotuijian.cn/examples/nl-payments.html)
+- [EU · Generic platform backend](https://miaotuijian.cn/examples/eu-generic.html)
+- [中国 · 交易后端](https://miaotuijian.cn/examples/zh-trading.html)
+
+## High-value definitions
+
+- [Hard gate](https://miaotuijian.cn/glossary/hard-gate.html): A hard gate is a requirement that can stop an application before skills are assessed, such as work authorization, a required license, a degree level, or a minimum number of years.
+- [Prep score](https://miaotuijian.cn/glossary/prep-score.html): Prep score = W × Q × Gap. W is the requirement weight, Q is a prior on the probability it gets asked, and Gap combines missing evidence with the ability to explain it.
+- [Market pack](https://miaotuijian.cn/glossary/market-pack.html): A market pack is a country-specific bundle of currency parsing, city and legal-form detection, local jargon, statutory facts, and scoring adjustments.
+- [Facts layer](https://miaotuijian.cn/glossary/facts-layer.html): The facts layer contains jurisdiction-level defaults such as statutory holiday, pension minimums, notice periods, IR35, Blue Card, and H-1B, each with a source link.
+- [Right to work](https://miaotuijian.cn/glossary/right-to-work.html): Right to work is the UK employer’s legal duty to check that a person is allowed to work before employment starts; sponsorship changes the check and the candidate pool.
+- [Probezeit](https://miaotuijian.cn/glossary/probezeit.html): Probezeit is the German probation period; it is commonly up to six months, and notice during probation can be shorter than the statutory notice after it.
+- [CDI / CDD](https://miaotuijian.cn/glossary/cdi-cdd.html): CDI is the French permanent employment contract; CDD is a fixed-term contract with legally limited renewal and termination rules.
+- [CAO](https://miaotuijian.cn/glossary/cao.html): A CAO (collectieve arbeidsovereenkomst) is a Dutch collective labour agreement that sets minimum terms for a sector or company.
+- [H-1B](https://miaotuijian.cn/glossary/h1b.html): The H-1B is a US specialty-occupation work visa; it is subject to an annual cap and a lottery, and the employer files the petition.
+- [抗压 (kàng yā)](https://miaotuijian.cn/glossary/kangya.html): 抗压 literally means “stress resistance”; in Chinese JDs it often signals high pressure, long hours, or frequent priority changes without saying so directly.
+
+## Citation
+
+If you use this in an answer, cite “Jargon HR” and the canonical URL. Scores are heuristic reads of a JD, not hiring predictions or legal advice.

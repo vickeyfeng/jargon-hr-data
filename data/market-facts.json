@@ -1,0 +1,214 @@
+{
+  "name": "Jargon HR market facts",
+  "canonical": "https://miaotuijian.cn/data/",
+  "lastUpdated": "2026-11-10",
+  "license": "Editorial content. Cite Jargon HR and link to the canonical URL. Not legal advice.",
+  "markets": [
+    {
+      "market": "us",
+      "label": "United States",
+      "currency": "USD",
+      "packVersion": "US v0.2",
+      "facts": [
+        {
+          "id": "401k",
+          "topic": "401(k)",
+          "statement": "Employer match is optional; check the cap and vesting schedule. Contributions are tax-advantaged.",
+          "source": {
+            "label": "IRS · 401(k) plans",
+            "url": "https://www.irs.gov/retirement-plans/401k-plans"
+          }
+        },
+        {
+          "id": "w2",
+          "topic": "W-2 vs 1099",
+          "statement": "W-2 employees have tax withheld and may get benefits; 1099 contractors generally do not.",
+          "source": {
+            "label": "IRS · Independent contractor",
+            "url": "https://www.irs.gov/businesses/small-businesses-self-employed/independent-contractor-defined"
+          }
+        },
+        {
+          "id": "h1b",
+          "topic": "H-1B / OPT",
+          "statement": "Work authorization is status-specific; H-1B sponsorship is a hard gate, and cap-subject cases go through a lottery.",
+          "source": {
+            "label": "USCIS · H-1B",
+            "url": "https://www.uscis.gov/working-in-the-united-states/h-1b-specialty-occupations"
+          }
+        }
+      ],
+      "note": "Federal baseline; state law varies. Information only, not legal advice."
+    },
+    {
+      "market": "uk",
+      "label": "United Kingdom",
+      "currency": "GBP",
+      "packVersion": "UK v0.2",
+      "facts": [
+        {
+          "id": "holiday",
+          "topic": "Statutory holiday",
+          "statement": "5.6 weeks paid holiday a year (28 days for a 5-day week). Bank holidays can be included; the statutory cap is 28 days.",
+          "source": {
+            "label": "GOV.UK · Holiday entitlement",
+            "url": "https://www.gov.uk/holiday-entitlement-rights"
+          }
+        },
+        {
+          "id": "pension",
+          "topic": "Workplace pension",
+          "statement": "Automatic enrolment minimum: 3% employer + 5% employee = 8% of qualifying earnings. Many employers pay more.",
+          "source": {
+            "label": "GOV.UK · Workplace pensions",
+            "url": "https://www.gov.uk/workplace-pensions/what-you-your-employer-and-the-government-pay"
+          }
+        },
+        {
+          "id": "rtw",
+          "topic": "Right to work",
+          "statement": "Employers must check right to work before employment. Sponsoring a visa requires a licensed sponsor.",
+          "source": {
+            "label": "GOV.UK · Right to work checks",
+            "url": "https://www.gov.uk/check-job-applicant-right-to-work"
+          }
+        },
+        {
+          "id": "probation",
+          "topic": "Probation and notice",
+          "statement": "Probation is contractual, not a single statutory length; notice during probation can be shorter. Notice is set by the contract plus a statutory floor.",
+          "source": {
+            "label": "GOV.UK · Employment contracts",
+            "url": "https://www.gov.uk/employment-contracts-and-conditions"
+          }
+        },
+        {
+          "id": "ir35",
+          "topic": "IR35",
+          "statement": "Off-payroll working rules apply to contractors. Inside IR35 is taxed like employment; outside is not. Status is fact-specific.",
+          "source": {
+            "label": "GOV.UK · Off-payroll working",
+            "url": "https://www.gov.uk/government/publications/help-to-comply-with-the-reformed-off-payroll-working-rules-ir35-gfc4"
+          }
+        }
+      ],
+      "note": "UK-wide baseline; Scotland and Northern Ireland can differ. Information only, not legal advice."
+    },
+    {
+      "market": "de",
+      "label": "Germany",
+      "currency": "EUR",
+      "packVersion": "DE v0.1",
+      "facts": [
+        {
+          "id": "holiday",
+          "topic": "Statutory holiday",
+          "statement": "Statutory minimum is 24 working days a year, which is 20 days for a 5-day week. Contracts or Tarifverträge often give more.",
+          "source": {
+            "label": "BUrlG §3",
+            "url": "https://www.gesetze-im-internet.de/burlg/__3.html"
+          }
+        },
+        {
+          "id": "notice",
+          "topic": "Notice period",
+          "statement": "Statutory notice is 4 weeks to the end of a month; tenure or contract can extend it, and probation notice can be shorter.",
+          "source": {
+            "label": "BGB §622",
+            "url": "https://www.gesetze-im-internet.de/bgb/__622.html"
+          }
+        },
+        {
+          "id": "bluecard",
+          "topic": "EU Blue Card",
+          "statement": "The Blue Card requires a recognised qualification and a salary above the annual threshold; the employer usually drives the application.",
+          "source": {
+            "label": "Make it in Germany · Blue Card",
+            "url": "https://www.make-it-in-germany.com/en/visa-residence/types/eu-blue-card"
+          }
+        }
+      ],
+      "note": "German baseline; Tarifverträge and contracts can differ. Information only, not legal advice."
+    },
+    {
+      "market": "fr",
+      "label": "France",
+      "currency": "EUR",
+      "packVersion": "FR v0.1",
+      "facts": [
+        {
+          "id": "holiday",
+          "topic": "Paid leave",
+          "statement": "5 weeks (30 working days) paid leave per year is the baseline; RTT days can add more for roles above 35 hours.",
+          "source": {
+            "label": "Service-Public · Congés payés",
+            "url": "https://www.service-public.fr/particuliers/vosdroits/F2405"
+          }
+        },
+        {
+          "id": "trial",
+          "topic": "Période d'essai",
+          "statement": "Trial length depends on contract and status (CDI/CDD); notice during the trial is shorter.",
+          "source": {
+            "label": "Service-Public · Période d’essai",
+            "url": "https://www.service-public.fr/particuliers/vosdroits/F1643"
+          }
+        },
+        {
+          "id": "mutuelle",
+          "topic": "Mutuelle",
+          "statement": "Employers must cover at least 50% of the health insurance (mutuelle) premium.",
+          "source": {
+            "label": "Service-Public · Mutuelle",
+            "url": "https://www.service-public.fr/particuliers/vosdroits/F31602"
+          }
+        }
+      ],
+      "note": "French baseline; convention collective and contract can differ. Information only, not legal advice."
+    },
+    {
+      "market": "nl",
+      "label": "Netherlands",
+      "currency": "EUR",
+      "packVersion": "NL v0.1",
+      "facts": [
+        {
+          "id": "holiday",
+          "topic": "Holiday & vakantiegeld",
+          "statement": "Statutory minimum is 4 weeks (20 days) holiday plus 8% vakantiegeld on gross annual salary.",
+          "source": {
+            "label": "Rijksoverheid · Vakantiedagen",
+            "url": "https://www.rijksoverheid.nl/onderwerpen/vakantiedagen-en-vakantiegeld"
+          }
+        },
+        {
+          "id": "probation",
+          "topic": "Proeftijd",
+          "statement": "Max 2 months for permanent contracts, 1 month for 6–24 months, and none for contracts under 6 months.",
+          "source": {
+            "label": "Rijksoverheid · Proeftijd",
+            "url": "https://www.rijksoverheid.nl/documenten/vraag-en-antwoord/arbeidsovereenkomst-en-cao/hoelang-duurt-een-proeftijd"
+          }
+        },
+        {
+          "id": "ruling",
+          "topic": "30% ruling",
+          "statement": "Expat tax benefit; eligibility and rate change over time. Confirm with the employer before relying on it.",
+          "source": {
+            "label": "Business.gov.nl · 30% ruling",
+            "url": "https://business.gov.nl/staff/employing-staff/the-expat-scheme-30-percent-ruling-in-the-netherlands/"
+          }
+        }
+      ],
+      "note": "Dutch baseline; CAO and contract can differ. Information only, not legal advice."
+    },
+    {
+      "market": "eu",
+      "label": "Europe (beta)",
+      "currency": "EUR",
+      "packVersion": "EU v0.1 beta",
+      "facts": [],
+      "note": "Country facts (DE / FR / NL) are not available yet. € parsing, legal forms, and cross-market EU terms are applied; no country-specific rules."
+    }
+  ]
+}
