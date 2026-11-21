@@ -910,6 +910,12 @@ Jargon HR is an independent, rule-based tool. Product behavior is deterministic.
 
 ## Changelog
 
+### 2026-11-21 — Footer changelog link, about share image and Chinese term language signals
+
+- Linked the changelog from the shared footer on every page so it is no longer an orphan page; the changelog page itself does not link back to itself.
+- Added the shared og:image and twitter:image tags to the about page and switched its Twitter card to summary_large_image, matching the rest of the site.
+- Marked the nine China labor-market glossary entries as zh-CN; all other entries remain English. URLs, counts and sitemap entries are unchanged.
+
 ### 2026-11-21 — Added check criteria and common misreads to seven more glossary entries
 
 - Added How to check and Common misread sections to CAO, 统招, articulation gap, 五险一金, 抗压, H-1B, and CDI/CDD, lifting the next band of mid-length entries.
