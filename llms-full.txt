@@ -546,6 +546,10 @@ Why it matters: A strong project with a rambling story still reads as weak signa
 
 Example: You built the system but cannot explain the trade-off between consistency and latency in two minutes.
 
+How to check: For each claimed achievement, rehearse it in a fixed structure — context, your decision, action, result with a number — and time yourself. If you leave out the trade-off, scope, or outcome, the gap is in articulation, not necessarily in experience.
+
+Common misread: Do not confuse an articulation gap with an evidence gap: here the experience exists but the story is disorganized. Conversely, do not paper over a missing project with a fluent narrative; interviewers follow up on specifics.
+
 ### Company check (企业体检)
 
 The company check scores stability, growth, management maturity, workload, pay credibility, and hiring sincerity from signals in the JD.
@@ -630,6 +634,10 @@ Why it matters: The contract type changes stability, loan eligibility, notice, a
 
 Example: A CDD with a six-month term is not equivalent to a CDI even if the day-to-day work is the same.
 
+How to check: Check the contract type written in the offer, the CDD term and renewal limits, notice period, and whether the role states a CDI target. The type changes job security, loan and rental eligibility, and severance expectations.
+
+Common misread: Do not equate a CDD covering the same daily work with a CDI: fixed-term rules, renewal caps, and end-of-career compensation differ. Do not assume every French opening on a temporary basis will convert; ask in writing whether a CDI is the stated goal.
+
 ### RTT (工时减让假)
 
 RTT (réduction du temps de travail) is extra paid time off earned by employees whose working time exceeds the statutory 35-hour week.
@@ -653,6 +661,10 @@ A CAO (collectieve arbeidsovereenkomst) is a Dutch collective labour agreement t
 Why it matters: It can override or supplement the individual contract, including pay scales, leave, and probation.
 
 Example: “CAO applies” means the offer is not fully negotiable on every term.
+
+How to check: Check whether the JD or offer names the applicable CAO, which sector it covers, and whether pay scale, leave allowance, and probation terms come from the CAO or the individual contract. Some terms are fixed by the agreement and cannot be negotiated one-on-one.
+
+Common misread: Do not assume a Dutch offer is fully individualized: CAO terms can set the floor even when your contract looks standard. Equally, do not read every collective term as a disadvantage — the CAO can also add leave and protection not found in a bare contract.
 
 ### Proeftijd (荷兰试用期)
 
@@ -742,6 +754,10 @@ Why it matters: It is a hard gate with timing risk; “we sponsor” is not the 
 
 Example: A role that requires H-1B sponsorship may be closed even if the technical match is strong.
 
+How to check: Confirm whether the employer sponsors, at what point in the process, and whether they have filed petitions before. Check the cap and lottery timing, and whether the role qualifies as a specialty occupation; the employer's willingness to file matters as much as your credentials.
+
+Common misread: Do not treat “we sponsor sometimes” as a committed petition: cap season and lottery odds are real constraints. Do not assume an H-1B path transfers automatically between employers; a change usually requires a new petition.
+
 ### 抗压 (kàng yā) (抗压)
 
 抗压 literally means “stress resistance”; in Chinese JDs it often signals high pressure, long hours, or frequent priority changes without saying so directly.
@@ -751,6 +767,10 @@ Example: A role that requires H-1B sponsorship may be closed even if the technic
 Why it matters: It is a workload signal, not a personality requirement; ask what a normal week looks like.
 
 Example: “抗压能力强，能适应快节奏” is a prompt to ask about hours, on-call, and deadline frequency.
+
+How to check: Translate the signal into concrete questions: average weekly hours, on-call frequency, deadline cycles, and how often priorities change. A vague 抗压 line should be checked against the team's actual rhythm, not taken as a generic personality test.
+
+Common misread: Do not read 抗压 as a request to tolerate unpaid overtime by default; it is a workload clue. Equally, do not dismiss every fast-paced role as high-pressure — clarify the normal week before judging.
 
 ### 五险一金 (五险一金)
 
@@ -762,6 +782,10 @@ Why it matters: It is a large part of real compensation, and the contribution ba
 
 Example: “五险一金全额缴纳” is stronger than “按最低基数缴纳”.
 
+How to check: Ask about the contribution base (全额 vs 最低基数), whether the housing fund is included at the standard rate, and which insurances are actually enrolled. The monthly take-home difference between bases can be substantial over a year.
+
+Common misread: Do not compare Chinese offers on base salary alone: employer and employee contributions and the housing fund are part of real compensation. Do not assume 五险一金 means full-base contributions; the wording in the offer matters.
+
 ### 统招 (tǒng zhāo) (统招)
 
 统招 refers to full-time higher-education admission through the national entrance exam; many Chinese JDs use it as a hard degree filter.
@@ -771,6 +795,10 @@ Example: “五险一金全额缴纳” is stronger than “按最低基数缴�
 Why it matters: It can screen out otherwise qualified candidates, including many self-taught or part-time-degree engineers.
 
 Example: “统招本科及以上” is a gate that may be stricter than “本科及以上”.
+
+How to check: Look at whether the JD states 统招 explicitly, whether it requires full-time (全日制) study, and whether the requirement applies to the degree level or the school entry route. Distinguish it from a plain 本科 requirement, which may accept other degree forms.
+
+Common misread: Do not equate 统招 with the quality of a candidate's skills: it is an admission-route filter, not a judgment of ability. Do not overstate your education route if it does not match; if unsure, ask whether the role accepts adult-education or part-time degrees.
 
 ### 大小周 (大小周)
 
@@ -881,6 +909,12 @@ License: editorial content; cite Jargon HR and link to the canonical URL. Not le
 Jargon HR is an independent, rule-based tool. Product behavior is deterministic. Editorial pages are drafted with AI assistance and checked against linked official sources. No invented author biographies are published. The site does not provide legal, tax or immigration advice. Corrections: update the source-linked content, rebuild with node scripts/build-static.cjs, and redeploy.
 
 ## Changelog
+
+### 2026-11-21 — Added check criteria and common misreads to seven more glossary entries
+
+- Added How to check and Common misread sections to CAO, 统招, articulation gap, 五险一金, 抗压, H-1B, and CDI/CDD, lifting the next band of mid-length entries.
+- Existing bilingual definitions, why-it-matters lines and examples are unchanged; only the optional criteria and pitfalls sections were added.
+- Regenerated static pages, public data JSON and llms-full.txt; glossary count and sitemap URLs are unchanged.
 
 ### 2026-11-21 — Deepened seven thin glossary entries and the question index
 

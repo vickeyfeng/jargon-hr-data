@@ -162,6 +162,8 @@
       "zhDef": "证据存在，但还不能清楚、简洁地用面试官的语言讲出来。",
       "why": "A strong project with a rambling story still reads as weak signal.",
       "example": "You built the system but cannot explain the trade-off between consistency and latency in two minutes.",
+      "criteria": "For each claimed achievement, rehearse it in a fixed structure — context, your decision, action, result with a number — and time yourself. If you leave out the trade-off, scope, or outcome, the gap is in articulation, not necessarily in experience.",
+      "pitfalls": "Do not confuse an articulation gap with an evidence gap: here the experience exists but the story is disorganized. Conversely, do not paper over a missing project with a fluent narrative; interviewers follow up on specifics.",
       "related": [
         "evidence-gap",
         "prep-score"
@@ -277,6 +279,8 @@
       "zhDef": "CDI 是法国长期合同，CDD 是有严格续签/终止规则的短期合同。",
       "why": "The contract type changes stability, loan eligibility, notice, and what “permanent” means in the offer.",
       "example": "A CDD with a six-month term is not equivalent to a CDI even if the day-to-day work is the same.",
+      "criteria": "Check the contract type written in the offer, the CDD term and renewal limits, notice period, and whether the role states a CDI target. The type changes job security, loan and rental eligibility, and severance expectations.",
+      "pitfalls": "Do not equate a CDD covering the same daily work with a CDI: fixed-term rules, renewal caps, and end-of-career compensation differ. Do not assume every French opening on a temporary basis will convert; ask in writing whether a CDI is the stated goal.",
       "related": [
         "rtt",
         "hard-gate"
@@ -307,6 +311,8 @@
       "zhDef": "荷兰行业或公司的集体劳动协议，规定该领域的最低雇佣条件。",
       "why": "It can override or supplement the individual contract, including pay scales, leave, and probation.",
       "example": "“CAO applies” means the offer is not fully negotiable on every term.",
+      "criteria": "Check whether the JD or offer names the applicable CAO, which sector it covers, and whether pay scale, leave allowance, and probation terms come from the CAO or the individual contract. Some terms are fixed by the agreement and cannot be negotiated one-on-one.",
+      "pitfalls": "Do not assume a Dutch offer is fully individualized: CAO terms can set the floor even when your contract looks standard. Equally, do not read every collective term as a disadvantage — the CAO can also add leave and protection not found in a bare contract.",
       "related": [
         "proeftijd",
         "vakantiegeld"
@@ -425,6 +431,8 @@
       "zhDef": "美国高技能专业岗位工作签证，有年度配额和抽签，由雇主提交申请。",
       "why": "It is a hard gate with timing risk; “we sponsor” is not the same as “we will file this year”.",
       "example": "A role that requires H-1B sponsorship may be closed even if the technical match is strong.",
+      "criteria": "Confirm whether the employer sponsors, at what point in the process, and whether they have filed petitions before. Check the cap and lottery timing, and whether the role qualifies as a specialty occupation; the employer's willingness to file matters as much as your credentials.",
+      "pitfalls": "Do not treat “we sponsor sometimes” as a committed petition: cap season and lottery odds are real constraints. Do not assume an H-1B path transfers automatically between employers; a change usually requires a new petition.",
       "related": [
         "right-to-work",
         "hard-gate"
@@ -439,6 +447,8 @@
       "zhDef": "“抗压”字面是承受压力，JD 里常暗示高压、长工时或频繁变需求。",
       "why": "It is a workload signal, not a personality requirement; ask what a normal week looks like.",
       "example": "“抗压能力强，能适应快节奏” is a prompt to ask about hours, on-call, and deadline frequency.",
+      "criteria": "Translate the signal into concrete questions: average weekly hours, on-call frequency, deadline cycles, and how often priorities change. A vague 抗压 line should be checked against the team's actual rhythm, not taken as a generic personality test.",
+      "pitfalls": "Do not read 抗压 as a request to tolerate unpaid overtime by default; it is a workload clue. Equally, do not dismiss every fast-paced role as high-pressure — clarify the normal week before judging.",
       "related": [
         "daxiao-zhou",
         "wuxian-yijin"
@@ -453,6 +463,8 @@
       "zhDef": "中国法定社保与住房公积金：养老、医疗、失业、工伤、生育 + 公积金。",
       "why": "It is a large part of real compensation, and the contribution base matters more than the headline salary.",
       "example": "“五险一金全额缴纳” is stronger than “按最低基数缴纳”.",
+      "criteria": "Ask about the contribution base (全额 vs 最低基数), whether the housing fund is included at the standard rate, and which insurances are actually enrolled. The monthly take-home difference between bases can be substantial over a year.",
+      "pitfalls": "Do not compare Chinese offers on base salary alone: employer and employee contributions and the housing fund are part of real compensation. Do not assume 五险一金 means full-base contributions; the wording in the offer matters.",
       "related": [
         "kangya",
         "tongzhao"
@@ -467,6 +479,8 @@
       "zhDef": "通过全国统一招生考试的全日制学历；很多 JD 把它当硬性学历筛选。",
       "why": "It can screen out otherwise qualified candidates, including many self-taught or part-time-degree engineers.",
       "example": "“统招本科及以上” is a gate that may be stricter than “本科及以上”.",
+      "criteria": "Look at whether the JD states 统招 explicitly, whether it requires full-time (全日制) study, and whether the requirement applies to the degree level or the school entry route. Distinguish it from a plain 本科 requirement, which may accept other degree forms.",
+      "pitfalls": "Do not equate 统招 with the quality of a candidate's skills: it is an admission-route filter, not a judgment of ability. Do not overstate your education route if it does not match; if unsure, ask whether the role accepts adult-education or part-time degrees.",
       "related": [
         "hard-gate",
         "kangya"
