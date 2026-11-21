@@ -3,7 +3,7 @@
 > Free, private, rule-based job-description checker. It translates hiring jargon, separates hard gates from core skills, scores the company on six heuristics, and builds an evidence-backed interview prep list. No account, no upload, no auto-apply.
 
 Canonical: https://miaotuijian.cn/
-Last updated: 2026-11-10
+Last updated: 2026-11-21
 
 ## 中文
 
@@ -15,7 +15,8 @@ Last updated: 2026-11-10
 - [English checker](https://miaotuijian.cn/en/): US, UK, Germany, France, Netherlands, EU fallback; market selector and industry overlay.
 - [Method, limits & privacy](https://miaotuijian.cn/about.html): scoring formula, fact sources, no-cookie/no-analytics policy.
 - [FAQ](https://miaotuijian.cn/faq.html): 15 short answers in English and Chinese.
-- [Glossary](https://miaotuijian.cn/glossary/): 33 hiring and job-market terms with definitions.
+- [Glossary](https://miaotuijian.cn/glossary/): 38 hiring and job-market terms with definitions.
+- [面试问题库](https://miaotuijian.cn/questions/): 4 个岗位、24 个高频面试问题，含考察点、回答骨架、常见坑与 JD 信号。
 - [Comparisons](https://miaotuijian.cn/compare/): Jargon HR vs ChatGPT, manual prep, and resume keyword tools.
 - [Public data](https://miaotuijian.cn/data/): glossary, market facts and example metadata as JSON.
 - [Editorial policy](https://miaotuijian.cn/editorial.html): authorship, AI disclosure, fact review and limits.
@@ -28,13 +29,24 @@ Last updated: 2026-11-10
 - [Jargon HR vs preparing manually](https://miaotuijian.cn/compare/manual-prep.html)
 - [Jargon HR vs resume/JD keyword tools](https://miaotuijian.cn/compare/resume-tools.html)
 
+## 面试问题
+
+- [AI 产品经理](https://miaotuijian.cn/questions/ai-product-manager.html): 把模型能力变成可上线、可收费、可衡量的产品。
+- [数据分析](https://miaotuijian.cn/questions/data-analyst.html): 把模糊业务问题拆成口径、假设和可落地的证据。
+- [前端工程师](https://miaotuijian.cn/questions/frontend-engineer.html): 在复杂场景里做性能、工程化和协作取舍。
+- [产品运营](https://miaotuijian.cn/questions/product-operations.html): 用最小成本找到增长杠杆，并证明它可复制。
+
 ## Public data
 
 - [Glossary JSON](https://miaotuijian.cn/data/glossary.json)
 - [Market facts JSON](https://miaotuijian.cn/data/market-facts.json)
+- [GitHub data mirror](https://github.com/vickeyfeng/jargon-hr-data)
+- [China baseline facts JSON](https://miaotuijian.cn/data/china-facts.json)
 - [Example metadata JSON](https://miaotuijian.cn/data/examples.json)
 
 ## Example reports
+
+- [Example reports index](https://miaotuijian.cn/examples/): static, crawlable sample reports for US, UK, Germany, France, Netherlands, EU and China roles.
 
 - [US · SaaS backend](https://miaotuijian.cn/examples/us-saas.html)
 - [UK · Fintech backend](https://miaotuijian.cn/examples/uk-fintech.html)
@@ -44,18 +56,46 @@ Last updated: 2026-11-10
 - [EU · Generic platform backend](https://miaotuijian.cn/examples/eu-generic.html)
 - [中国 · 交易后端](https://miaotuijian.cn/examples/zh-trading.html)
 
-## High-value definitions
+## Glossary definitions
 
-- [Hard gate](https://miaotuijian.cn/glossary/hard-gate.html): A hard gate is a requirement that can stop an application before skills are assessed, such as work authorization, a required license, a degree level, or a minimum number of years.
-- [Prep score](https://miaotuijian.cn/glossary/prep-score.html): Prep score = W × Q × Gap. W is the requirement weight, Q is a prior on the probability it gets asked, and Gap combines missing evidence with the ability to explain it.
+- [Jargon HR](https://miaotuijian.cn/glossary/jargon-hr.html): Jargon HR is a rule-based job-description checker that translates hiring jargon, separates hard gates from core skills and nice-to-haves, scores the company on six heuristics, and builds an evidence-backed interview prep list.
+- [Job-description parsing](https://miaotuijian.cn/glossary/jd-parsing.html): JD parsing splits a job description into sections, then into atomic requirements that can each be classified, matched, and scored.
 - [Market pack](https://miaotuijian.cn/glossary/market-pack.html): A market pack is a country-specific bundle of currency parsing, city and legal-form detection, local jargon, statutory facts, and scoring adjustments.
+- [Industry overlay](https://miaotuijian.cn/glossary/industry-overlay.html): An industry overlay adds sector-specific signals and a light scoring adjustment on top of a market pack, without duplicating the country data.
 - [Facts layer](https://miaotuijian.cn/glossary/facts-layer.html): The facts layer contains jurisdiction-level defaults such as statutory holiday, pension minimums, notice periods, IR35, Blue Card, and H-1B, each with a source link.
+- [Hard gate](https://miaotuijian.cn/glossary/hard-gate.html): A hard gate is a requirement that can stop an application before skills are assessed, such as work authorization, a required license, a degree level, or a minimum number of years.
+- [Core requirement](https://miaotuijian.cn/glossary/core-requirement.html): A core requirement is a capability the role is actually hired for; it usually drives interview depth and leveling, even when the JD does not use the word “required”.
+- [Nice-to-have](https://miaotuijian.cn/glossary/nice-to-have.html): A nice-to-have is a preferred signal that is not expected to be met by every qualified candidate.
+- [Prep score](https://miaotuijian.cn/glossary/prep-score.html): Prep score = W × Q × Gap. W is the requirement weight, Q is a prior on the probability it gets asked, and Gap combines missing evidence with the ability to explain it.
+- [Evidence gap](https://miaotuijian.cn/glossary/evidence-gap.html): An evidence gap means you may have the experience but the JD or your materials contain no concrete proof of it.
+- [Articulation gap](https://miaotuijian.cn/glossary/articulation-gap.html): An articulation gap means the evidence exists but you cannot yet explain it clearly, concisely, or in the interviewer’s language.
+- [Company check](https://miaotuijian.cn/glossary/company-check.html): The company check scores stability, growth, management maturity, workload, pay credibility, and hiring sincerity from signals in the JD.
+- [Ask probability (Q)](https://miaotuijian.cn/glossary/ask-probability.html): Q is a prior estimate of how likely a requirement is to be probed in an interview, based on its type and how central it is to the role.
 - [Right to work](https://miaotuijian.cn/glossary/right-to-work.html): Right to work is the UK employer’s legal duty to check that a person is allowed to work before employment starts; sponsorship changes the check and the candidate pool.
+- [IR35](https://miaotuijian.cn/glossary/ir35.html): IR35 is the UK’s off-payroll working rule set, determining whether a contractor engaged through an intermediary is effectively an employee for tax purposes.
 - [Probezeit](https://miaotuijian.cn/glossary/probezeit.html): Probezeit is the German probation period; it is commonly up to six months, and notice during probation can be shorter than the statutory notice after it.
+- [Kündigungsfrist](https://miaotuijian.cn/glossary/kuendigungsfrist.html): Kündigungsfrist is the German notice period; the statutory baseline is four weeks to the end of a month, but a contract or Tarifvertrag can extend it.
+- [Tarifvertrag](https://miaotuijian.cn/glossary/tarifvertrag.html): A Tarifvertrag is a collective agreement between an employer or employers’ association and a union, setting pay, hours, leave, and other terms.
 - [CDI / CDD](https://miaotuijian.cn/glossary/cdi-cdd.html): CDI is the French permanent employment contract; CDD is a fixed-term contract with legally limited renewal and termination rules.
+- [RTT](https://miaotuijian.cn/glossary/rtt.html): RTT (réduction du temps de travail) is extra paid time off earned by employees whose working time exceeds the statutory 35-hour week.
 - [CAO](https://miaotuijian.cn/glossary/cao.html): A CAO (collectieve arbeidsovereenkomst) is a Dutch collective labour agreement that sets minimum terms for a sector or company.
+- [Proeftijd](https://miaotuijian.cn/glossary/proeftijd.html): Proeftijd is the Dutch probation period; it is capped at two months for a permanent contract, one month for a fixed term of 6–24 months, and is not allowed for contracts under six months.
+- [Vakantiegeld](https://miaotuijian.cn/glossary/vakantiegeld.html): Vakantiegeld is the Dutch holiday allowance, usually 8% of gross annual salary, typically paid in May or June.
+- [30% ruling](https://miaotuijian.cn/glossary/30-percent-ruling.html): The 30% ruling is a Dutch tax facility for eligible incoming employees, allowing a portion of salary to be paid tax-free; the rate and conditions have changed over time.
+- [EU Blue Card](https://miaotuijian.cn/glossary/eu-blue-card.html): The EU Blue Card is a work-and-residence permit for qualified non-EU workers, with salary and qualification thresholds set by the member state.
+- [At-will employment](https://miaotuijian.cn/glossary/at-will.html): At-will employment means either the employer or the employee can end the relationship at any time for any lawful reason, subject to exceptions and contracts.
+- [W-2 vs 1099](https://miaotuijian.cn/glossary/w2-1099.html): W-2 workers are employees with payroll withholding and benefits; 1099 workers are independent contractors responsible for their own taxes and benefits.
+- [401(k)](https://miaotuijian.cn/glossary/401k.html): A 401(k) is a US employer-sponsored retirement account; employer matching is part of compensation but often vests over time.
 - [H-1B](https://miaotuijian.cn/glossary/h1b.html): The H-1B is a US specialty-occupation work visa; it is subject to an annual cap and a lottery, and the employer files the petition.
 - [抗压 (kàng yā)](https://miaotuijian.cn/glossary/kangya.html): 抗压 literally means “stress resistance”; in Chinese JDs it often signals high pressure, long hours, or frequent priority changes without saying so directly.
+- [五险一金](https://miaotuijian.cn/glossary/wuxian-yijin.html): 五险一金 is the Chinese statutory social-insurance and housing-fund package: pension, medical, unemployment, work injury, maternity, and the housing provident fund.
+- [统招 (tǒng zhāo)](https://miaotuijian.cn/glossary/tongzhao.html): 统招 refers to full-time higher-education admission through the national entrance exam; many Chinese JDs use it as a hard degree filter.
+- [大小周](https://miaotuijian.cn/glossary/daxiao-zhou.html): 大小周 is a schedule that alternates a five-day week and a six-day week, usually without extra pay.
+- [扁平化管理](https://miaotuijian.cn/glossary/pingbianhua.html): Flat hierarchy means few or no middle-management layers; in Chinese JDs it can mean fast direct communication, but sometimes also a thin promotion ladder and an unclear growth path.
+- [弹性工作制](https://miaotuijian.cn/glossary/tanxing-gongzuo.html): Flexible working sets core collaboration hours and lets the rest vary; in some JDs it blurs the boundary between work and off-work time, so confirm the expected online window.
+- [自驱力强 (zì qū lì)](https://miaotuijian.cn/glossary/ziquli.html): Self-driven means expected to spot problems and move without being told; it can mean weak handover, sparse mentorship, and high ambiguity.
+- [末位淘汰](https://miaotuijian.cn/glossary/mowei-taotai.html): Rank-and-yank ties reviews to a forced bottom share that may exit staff; it is a high-pressure turnover mechanism, not ordinary performance feedback.
+- [团队氛围好](https://miaotuijian.cn/glossary/tuandui-fenwei.html): “Great team vibe” describes internal relationships; it is subjective and can accompany long-hours social bonding, so weigh it against concrete hours and retention data.
 
 ## Citation
 

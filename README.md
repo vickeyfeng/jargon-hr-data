@@ -3,7 +3,7 @@
 Canonical site: **https://miaotuijian.cn/**
 GitHub mirror: https://github.com/vickeyfeng/jargon-hr-data
 Data page: https://miaotuijian.cn/data/
-Last updated: 2026-11-10
+Last updated: 2026-11-21
 
 This repository is a citable mirror of the machine-readable data behind Jargon HR, a free, private, rule-based job-description checker.
 
@@ -11,8 +11,9 @@ This repository is a citable mirror of the machine-readable data behind Jargon H
 
 | File | What it is |
 |---|---|
-| `data/glossary.json` | 33 bilingual hiring and job-market terms: definition, Chinese explanation, why it matters, example, related terms |
+| `data/glossary.json` | 38 bilingual hiring and job-market terms: definition, Chinese explanation, why it matters, example, related terms |
 | `data/market-facts.json` | UK/US/DE/FR/NL facts (17 total) with official source URLs and pack versions; EU fallback has no country facts |
+| `data/china-facts.json` | Six China labor-baseline facts (social insurance, housing fund, probation, overtime, annual leave, non-compete) with official source URLs |
 | `data/examples.json` | Metadata and scores for the seven static example reports |
 | `llms.txt` | LLM entry point with canonical links and high-value definitions |
 | `llms-full.txt` | Full text corpus: method, market packs, FAQ, glossary, comparisons, changelog |
@@ -21,7 +22,7 @@ This repository is a citable mirror of the machine-readable data behind Jargon H
 
 ## Citation
 
-> Jargon HR. “Jargon HR public data.” 2026-11-10. https://miaotuijian.cn/data/
+> Jargon HR. “Jargon HR public data.” 2026-11-21. https://miaotuijian.cn/data/
 
 See `CITATION.cff` for a machine-readable citation. If you use a fact, cite the specific source URL inside `data/market-facts.json` as well.
 

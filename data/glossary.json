@@ -1,7 +1,7 @@
 {
   "name": "Jargon HR glossary",
   "canonical": "https://miaotuijian.cn/glossary/",
-  "lastUpdated": "2026-11-10",
+  "lastUpdated": "2026-11-21",
   "license": "Editorial content. Cite Jargon HR and link to the canonical URL. Not legal advice.",
   "terms": [
     {
@@ -464,6 +464,74 @@
       "related": [
         "kangya",
         "wuxian-yijin"
+      ]
+    },
+    {
+      "slug": "pingbianhua",
+      "term": "扁平化管理",
+      "zh": "扁平化管理",
+      "category": "China",
+      "definition": "Flat hierarchy means few or no middle-management layers; in Chinese JDs it can mean fast direct communication, but sometimes also a thin promotion ladder and an unclear growth path.",
+      "zhDef": "“扁平化”指中间管理层级少；沟通可能直接，但也常意味着晋升层级窄、成长路径不清晰。",
+      "why": "A flat title does not show how reviews, promotions and pay rises are decided; ask about the review cycle and the next role level.",
+      "example": "“扁平化管理、沟通高效” — ask how often promotions are reviewed and what the next title level looks like.",
+      "related": [
+        "kangya"
+      ]
+    },
+    {
+      "slug": "tanxing-gongzuo",
+      "term": "弹性工作制",
+      "zh": "弹性工作",
+      "category": "China",
+      "definition": "Flexible working sets core collaboration hours and lets the rest vary; in some JDs it blurs the boundary between work and off-work time, so confirm the expected online window.",
+      "zhDef": "弹性工作以核心协作时段为界、其余时间可浮动；部分 JD 里它也模糊了下班边界，需确认在线时段。",
+      "why": "It is an arrangement, not a workload reduction; ask about core hours, after-hours messages, and on-call.",
+      "example": "“弹性工作，结果导向” — ask whether there are fixed core hours and what happens after work hours.",
+      "related": [
+        "kangya",
+        "daxiao-zhou"
+      ]
+    },
+    {
+      "slug": "ziquli",
+      "term": "自驱力强 (zì qū lì)",
+      "zh": "自驱力",
+      "category": "China",
+      "definition": "Self-driven means expected to spot problems and move without being told; it can mean weak handover, sparse mentorship, and high ambiguity.",
+      "zhDef": "“自驱力”指不等安排就主动推进；有时也意味着交接少、指导有限、模糊地带多。",
+      "why": "Verify whether support exists — onboarding, a mentor, clear scope — rather than treating independence as sufficient.",
+      "example": "“需要自驱力强，能独立扛事” — ask who hands off the work, how onboarding runs, and who you escalate to.",
+      "related": [
+        "kangya"
+      ]
+    },
+    {
+      "slug": "mowei-taotai",
+      "term": "末位淘汰",
+      "zh": "末位淘汰",
+      "category": "China",
+      "definition": "Rank-and-yank ties reviews to a forced bottom share that may exit staff; it is a high-pressure turnover mechanism, not ordinary performance feedback.",
+      "zhDef": "末位淘汰把考核与强制后位比例挂钩，可能涉及人员退出；属高压流转机制，不同于常规绩效反馈。",
+      "why": "Ask for review cadence, the stated bottom share, and whether exits happen on a cycle; read it as a workload and turnover signal.",
+      "example": "“末位淘汰制，结果导向” — ask how many people are reviewed out each cycle and what the review metrics are.",
+      "related": [
+        "kangya",
+        "daxiao-zhou"
+      ]
+    },
+    {
+      "slug": "tuandui-fenwei",
+      "term": "团队氛围好",
+      "zh": "氛围融洽",
+      "category": "China",
+      "definition": "“Great team vibe” describes internal relationships; it is subjective and can accompany long-hours social bonding, so weigh it against concrete hours and retention data.",
+      "zhDef": "“氛围好”描述团队关系融洽，属主观感受；有时伴随长时间团队共处，需用具体工时与人员流动来对照。",
+      "why": "A vibe statement cannot substitute for working hours, retention, or manager behavior; ask about team tenure and off-work events.",
+      "example": "“团队年轻、氛围好” — ask average team tenure, after-hours social events, and how turnover has been.",
+      "related": [
+        "kangya",
+        "tanxing-gongzuo"
       ]
     }
   ]

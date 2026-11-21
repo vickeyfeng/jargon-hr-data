@@ -1,7 +1,7 @@
 # Jargon HR — full text corpus
 
 Canonical: https://miaotuijian.cn/
-Last updated: 2026-11-10
+Last updated: 2026-11-21
 
 ## 中文简介
 
@@ -87,6 +87,344 @@ It is a probabilistic read based on a curated lexicon, not a fact about the comp
 ### 会帮我自动投递吗？
 
 不会。不投递、不打招呼、不抓取平台、不自动化联系招聘者。它只读你粘贴的那一段 JD。
+
+## 面试问题库
+
+### AI 产品经理
+
+AI 产品经理的面试很少考模型原理，更多在追问：你怎么判断一个场景值得做、怎么定义“效果够用”、以及上线后指标不涨时你改什么。
+
+一句话结论：AI 产品经理面试真正考的不是模型知识，而是能否把模糊业务问题拆成可验证的指标、可上线的边界和可接受的成本。
+
+#### 1. 讲一个你做过的最成功的 AI 产品，怎么衡量它成功？
+
+面试官在考什么：是否真做过、能否区分模型指标与业务指标、有没有基线。
+
+回答骨架：
+- 先给背景与约束：用户是谁、原来怎么做、为什么现在做。
+- 再给你的关键决策：砍了什么、为什么。
+- 最后给结果：基线、对照、业务指标，不只说准确率。
+
+常见坑：只讲模型效果和功能列表，不讲用户行为、成本或上线后的变化。
+
+JD 信号：“负责 AI 产品落地，对核心指标负责。”
+
+#### 2. 模型效果不稳定时，你怎么决定能不能上线？
+
+面试官在考什么：风险分级、兜底设计、灰度与人工介入。
+
+回答骨架：
+- 按失败成本分级：答错一句 vs 答错一笔钱。
+- 给出兜底：拒答、转人工、降级到规则。
+- 小流量灰度，设监控与回滚条件。
+
+常见坑：追求 100% 准确率，或者说“先上线再看”。
+
+JD 信号：“负责效果评估与线上质量。”
+
+#### 3. 你怎么把一个大模型能力做成用户愿意付费的功能？
+
+面试官在考什么：场景选择、价值量化、定价与推理成本。
+
+回答骨架：
+- 选高频且结果可感知的场景，不选“什么都能做”。
+- 把价值翻译成用户能感知的结果：省几分钟、少几次返工。
+- 算清单次成本与付费点，先做窄再做宽。
+
+常见坑：只讲能力多强，不讲用户为什么现在付钱、单次成本多少。
+
+JD 信号：“探索 AI 商业化/增值场景。”
+
+#### 4. 你怎么和算法、工程团队定需求边界？
+
+面试官在考什么：协作方式、可执行性、验收标准。
+
+回答骨架：
+- 先定输入/输出契约：什么算成功、什么算失败。
+- 再定验收指标与测试集，不拿个案当结论。
+- 最后定失败处理：重试、降级、人工。
+
+常见坑：把“效果不好”直接归因给算法，或者需求只写“更智能”。
+
+JD 信号：“跨团队协作，推动 AI 能力落地。”
+
+#### 5. 一个 AI 功能，你会自研、调 API 还是微调？
+
+面试官在考什么：数据壁垒、成本与延迟、迭代速度、合规。
+
+回答骨架：
+- 先看数据：有没有别人没有的标注/场景数据。
+- 再算成本与延迟，尤其是高峰和长尾。
+- 最后看迭代与合规：能不能快速换模型、数据能不能出境。
+
+常见坑：一律自研，或一律调 API，不给判断依据。
+
+JD 信号：“制定技术选型与产品路线图。”
+
+#### 6. 上线后核心指标没涨，你怎么排查？
+
+面试官在考什么：假设驱动、漏斗拆解、实验设计。
+
+回答骨架：
+- 先拆漏斗：曝光、使用、完成、留存，卡在哪一层。
+- 再分群：新老、场景、设备，找差异。
+- 最后做最小实验，一次只改一个变量。
+
+常见坑：直接换模型或加功能，没有定位问题。
+
+JD 信号：“数据驱动迭代，持续优化体验。”
+
+### 数据分析
+
+数据分析面试通常从一句模糊的业务问题开始，看你能不能先对齐口径，再拆假设，最后给出能落地的建议。
+
+一句话结论：数据分析面试真正考的不是 SQL 写法，而是能否把一句模糊的业务问题拆成口径、假设和能推动决策的证据。
+
+#### 1. 业务方说“转化率下降了”，你怎么定位？
+
+面试官在考什么：口径意识、结构化拆解、验证假设。
+
+回答骨架：
+- 先确认口径与数据质量：分母变了没有、埋点有没有断。
+- 再按渠道/人群/步骤拆，找到下降集中在哪。
+- 最后给假设和验证结果，不急着给结论。
+
+常见坑：只看整体大盘，或者直接说“因为用户变少了”。
+
+JD 信号：“独立完成业务专题分析。”
+
+#### 2. 你怎么设计一套能指导决策的指标体系？
+
+面试官在考什么：目标拆解、领先/滞后指标、护栏指标。
+
+回答骨架：
+- 从业务目标出发，先定一个北极星指标。
+- 拆成可影响的领先指标，再配护栏指标防副作用。
+- 给每个指标定 owner、口径和更新频率。
+
+常见坑：指标越多越好，没有优先级和责任人。
+
+JD 信号：“搭建并维护数据指标体系。”
+
+#### 3. A/B 实验不显著，但业务方想上线，你怎么处理？
+
+面试官在考什么：统计功效、实际显著性、风险判断。
+
+回答骨架：
+- 先看实验是否有效：样本量、功效、分流是否干净。
+- 再看置信区间与业务成本，不只看 p 值。
+- 给明确建议：上线、扩大样本、还是放弃，并写清风险。
+
+常见坑：用“接近显著”硬拗，或者直接妥协上线。
+
+JD 信号：“支持实验设计与效果评估。”
+
+#### 4. 两个部门的数据口径对不上，你怎么对齐？
+
+面试官在考什么：数据治理、沟通、文档化。
+
+回答骨架：
+- 先把两边的口径写成一句话，逐项对齐。
+- 再追数据血缘：源头、清洗、聚合分别在哪。
+- 最后建校验规则和文档，定期对账。
+
+常见坑：各改各的报表，或者只口头同步。
+
+JD 信号：“负责数据质量与口径管理。”
+
+#### 5. 你怎么证明你的分析带来了业务价值？
+
+面试官在考什么：归因、落地、反事实。
+
+回答骨架：
+- 先说清楚你的分析改变了哪个决策。
+- 再说落地动作和结果，尽量给对照/反事实。
+- 最后复盘：哪些是分析带来的，哪些是其他因素。
+
+常见坑：只讲报告写得多好，不讲决策有没有变。
+
+JD 信号：“分析结论推动业务增长。”
+
+#### 6. 现场写一个查询：算某功能 7 日留存，你会怎么下手？
+
+面试官在考什么：SQL 基本功、口径、边界条件。
+
+回答骨架：
+- 先定口径：新增用户、留存日、是否去重。
+- 再写查询：cohort + 次日/7 日回访。
+- 最后校验：总数、边界日期、异常值。
+
+常见坑：忽略去重、时间窗口和时区。
+
+JD 信号：“熟练使用 SQL/Python 处理数据。”
+
+### 前端工程师
+
+前端面试的区分度不在“会不会用框架”，而在复杂场景下的性能、工程化和协作取舍。
+
+一句话结论：前端面试真正考的不是框架 API，而是复杂场景下的性能、工程化与协作取舍。
+
+#### 1. 讲一个你做过的最复杂的前端项目，复杂度来自哪里？
+
+面试官在考什么：架构能力、技术判断、复盘。
+
+回答骨架：
+- 先说业务复杂度：多角色、多端、实时性、历史包袱。
+- 再说你的方案：为什么这么拆、放弃了什么。
+- 最后说结果与复盘：指标、事故、后续演进。
+
+常见坑：只讲用了 React/Vue 和多少个组件。
+
+JD 信号：“负责复杂 Web 应用的前端架构与开发。”
+
+#### 2. 首屏很慢，你怎么定位和优化？
+
+面试官在考什么：性能度量、工具链、取舍。
+
+回答骨架：
+- 先度量：LCP/INP/CLS，分清是网络、渲染还是 JS。
+- 再定位：资源体积、关键路径、接口串行。
+- 最后优化并回归：懒加载、缓存、SSR/预渲染。
+
+常见坑：不度量就直接上懒加载、压缩、拆包。
+
+JD 信号：“有性能优化经验，关注用户体验。”
+
+#### 3. 你怎么保证前端代码质量和交付效率？
+
+面试官在考什么：工程化、测试、CI、监控。
+
+回答骨架：
+- 先定规范与类型，减少低级错误。
+- 再用测试与 CI 门禁守住关键路径。
+- 最后上监控与回滚，出问题能快速定位。
+
+常见坑：只靠 code review，或者测试只写在简历里。
+
+JD 信号：“推动前端工程化与质量保障。”
+
+#### 4. 状态管理和组件复用，你怎么做取舍？
+
+面试官在考什么：设计能力、边界感、演进成本。
+
+回答骨架：
+- 先给状态分类：本地、跨组件、服务端缓存。
+- 再定复用边界：UI 复用 vs 逻辑复用。
+- 最后看演进成本：抽象是否让改需求更慢。
+
+常见坑：什么都塞全局状态，或者过度抽象。
+
+JD 信号：“具备组件化与前端架构设计能力。”
+
+#### 5. 和后端联调经常出问题，你怎么减少？
+
+面试官在考什么：契约、mock、错误处理。
+
+回答骨架：
+- 先定接口契约：字段、错误码、空值。
+- 再用 mock/契约测试提前发现不一致。
+- 最后统一错误处理与联调环境。
+
+常见坑：口头约定，出了问题再线上排查。
+
+JD 信号：“与后端/产品高效协作。”
+
+#### 6. 新项目选框架/库，你怎么判断？
+
+面试官在考什么：权衡、长期维护、迁移成本。
+
+回答骨架：
+- 先看需求与团队：复杂度、招聘、现有栈。
+- 再看生态与维护：issue 响应、升级路径。
+- 最后算迁移成本，别只看 star 数。
+
+常见坑：追新，或者只看 benchmark。
+
+JD 信号：“参与技术选型与架构演进。”
+
+### 产品运营
+
+产品运营面试很少考“创意”，更多在追问：你怎么找到杠杆、怎么算账、怎么证明动作可复制。
+
+一句话结论：产品运营面试真正考的不是活动创意，而是能否用最小成本找到增长杠杆，并用数据证明它可复制。
+
+#### 1. 你怎么从 0 到 1 冷启动一个产品或活动？
+
+面试官在考什么：用户洞察、渠道选择、节奏。
+
+回答骨架：
+- 先定最小人群和最小场景，不铺全量。
+- 再选 1–2 个能触达的渠道，做最小闭环。
+- 最后看数据：留存、转化、成本，决定加码还是换方向。
+
+常见坑：一上来全渠道投放，或者只做品牌曝光。
+
+JD 信号：“负责产品冷启动/用户增长。”
+
+#### 2. 用户留存低，你怎么拆解和提升？
+
+面试官在考什么：分层、关键行为、实验。
+
+回答骨架：
+- 先分群：新老、渠道、生命周期。
+- 再找关键行为：做过什么的人留存更高。
+- 最后做干预实验，设对照和止损。
+
+常见坑：只做签到、发券，不看行为变化。
+
+JD 信号：“提升用户留存与活跃。”
+
+#### 3. 设计一个拉新活动，你怎么算 ROI？
+
+面试官在考什么：成本、转化、LTV。
+
+回答骨架：
+- 先定目标与预算：拉新数、转化率、成本上限。
+- 再拆链路：曝光→参与→注册→付费。
+- 最后算 CAC 与 LTV，给加码/停止标准。
+
+常见坑：只看拉新数，不看后续留存和付费。
+
+JD 信号：“活动策划与 ROI 复盘。”
+
+#### 4. 怎么做用户分层和精细化运营？
+
+面试官在考什么：分层维度、策略差异、自动化。
+
+回答骨架：
+- 先选分层维度：价值、生命周期、行为。
+- 再给每层不同策略，不做“一刀切”。
+- 最后用自动化/触达工具落地，定期复盘。
+
+常见坑：分了层但没有差异化动作。
+
+JD 信号：“用户分层与精细化运营。”
+
+#### 5. 社区/内容冷启动，怎么找第一批种子用户？
+
+面试官在考什么：种子人群、内容钩子、社区规则。
+
+回答骨架：
+- 先找 50–100 个高相关种子用户，逐个聊。
+- 再用内容钩子（模板、案例、工具）吸引同频人。
+- 最后定规则与激励，让早期用户参与共建。
+
+常见坑：买量、拉亲友，或者一上来做大规模活动。
+
+JD 信号：“社区/内容运营经验。”
+
+#### 6. 数据下跌，老板要你“做点什么”，你怎么回应？
+
+面试官在考什么：优先级、沟通、验证。
+
+回答骨架：
+- 先定位：是数据问题、季节问题还是产品问题。
+- 再给 2–3 个假设和对应实验，排优先级。
+- 最后设止损线和复盘时间，不盲目上活动。
+
+常见坑：立刻上活动，用动作代替判断。
+
+JD 信号：“数据驱动运营，快速试错。”
 
 ## Glossary
 
@@ -420,6 +758,56 @@ Why it matters: It adds roughly two extra working days a month and is a concrete
 
 Example: “大小周” means you should ask which weeks are six-day and whether overtime is paid.
 
+### 扁平化管理 (扁平化管理)
+
+Flat hierarchy means few or no middle-management layers; in Chinese JDs it can mean fast direct communication, but sometimes also a thin promotion ladder and an unclear growth path.
+
+中文：“扁平化”指中间管理层级少；沟通可能直接，但也常意味着晋升层级窄、成长路径不清晰。
+
+Why it matters: A flat title does not show how reviews, promotions and pay rises are decided; ask about the review cycle and the next role level.
+
+Example: “扁平化管理、沟通高效” — ask how often promotions are reviewed and what the next title level looks like.
+
+### 弹性工作制 (弹性工作)
+
+Flexible working sets core collaboration hours and lets the rest vary; in some JDs it blurs the boundary between work and off-work time, so confirm the expected online window.
+
+中文：弹性工作以核心协作时段为界、其余时间可浮动；部分 JD 里它也模糊了下班边界，需确认在线时段。
+
+Why it matters: It is an arrangement, not a workload reduction; ask about core hours, after-hours messages, and on-call.
+
+Example: “弹性工作，结果导向” — ask whether there are fixed core hours and what happens after work hours.
+
+### 自驱力强 (zì qū lì) (自驱力)
+
+Self-driven means expected to spot problems and move without being told; it can mean weak handover, sparse mentorship, and high ambiguity.
+
+中文：“自驱力”指不等安排就主动推进；有时也意味着交接少、指导有限、模糊地带多。
+
+Why it matters: Verify whether support exists — onboarding, a mentor, clear scope — rather than treating independence as sufficient.
+
+Example: “需要自驱力强，能独立扛事” — ask who hands off the work, how onboarding runs, and who you escalate to.
+
+### 末位淘汰 (末位淘汰)
+
+Rank-and-yank ties reviews to a forced bottom share that may exit staff; it is a high-pressure turnover mechanism, not ordinary performance feedback.
+
+中文：末位淘汰把考核与强制后位比例挂钩，可能涉及人员退出；属高压流转机制，不同于常规绩效反馈。
+
+Why it matters: Ask for review cadence, the stated bottom share, and whether exits happen on a cycle; read it as a workload and turnover signal.
+
+Example: “末位淘汰制，结果导向” — ask how many people are reviewed out each cycle and what the review metrics are.
+
+### 团队氛围好 (氛围融洽)
+
+“Great team vibe” describes internal relationships; it is subjective and can accompany long-hours social bonding, so weigh it against concrete hours and retention data.
+
+中文：“氛围好”描述团队关系融洽，属主观感受；有时伴随长时间团队共处，需用具体工时与人员流动来对照。
+
+Why it matters: A vibe statement cannot substitute for working hours, retention, or manager behavior; ask about team tenure and off-work events.
+
+Example: “团队年轻、氛围好” — ask average team tenure, after-hours social events, and how turnover has been.
+
 ## Example reports
 
 - US · SaaS backend: https://miaotuijian.cn/examples/us-saas.html
@@ -454,7 +842,9 @@ Bottom line: A high keyword match is not a good job. Understand the role first, 
 
 - Glossary JSON: https://miaotuijian.cn/data/glossary.json
 - Market facts JSON: https://miaotuijian.cn/data/market-facts.json
+- China baseline facts JSON: https://miaotuijian.cn/data/china-facts.json
 - Example metadata JSON: https://miaotuijian.cn/data/examples.json
+- GitHub mirror: https://github.com/vickeyfeng/jargon-hr-data
 
 License: editorial content; cite Jargon HR and link to the canonical URL. Not legal advice.
 
@@ -463,6 +853,30 @@ License: editorial content; cite Jargon HR and link to the canonical URL. Not le
 Jargon HR is an independent, rule-based tool. Product behavior is deterministic. Editorial pages are drafted with AI assistance and checked against linked official sources. No invented author biographies are published. The site does not provide legal, tax or immigration advice. Corrections: update the source-linked content, rebuild with node scripts/build-static.cjs, and redeploy.
 
 ## Changelog
+
+### 2026-11-21 — Five added Chinese job-market terms
+
+- Added five China glossary terms: flat hierarchy (扁平化管理), flexible working (弹性工作制), self-driven (自驱力), rank-and-yank (末位淘汰), and team vibe (团队氛围好).
+- Each entry keeps the bilingual definition, why it matters, a JD example, and related-term links; no statistics or user-count claims are added.
+- Sitemap now lists 63 URLs; glossary data JSON carries 38 terms.
+
+### 2026-11-21 — Brand consistency, absolute internal links, full llms.txt coverage
+
+- Unified the public brand to Jargon HR; the internal project name no longer appears in page titles, kickers or footer labels.
+- Converted home, English and about internal links and asset paths to absolute URLs to avoid relative-path breakage on subpaths.
+- Completed llms.txt coverage: all glossary definitions and the examples index are listed alongside the existing example, question, comparison and data pages.
+
+### 2026-11-12 — Interview question library (pilot)
+
+- Added /questions/ with 4 roles × 6 high-frequency questions: AI product manager, data analyst, frontend engineer, product operations.
+- Each question includes what the interviewer is testing, a 3-step answer skeleton, common traps, and the JD signal to look for.
+- Added FAQPage/Article/BreadcrumbList JSON-LD, sitemap entries, and llms.txt / llms-full.txt coverage.
+
+### 2026-11-10 — China facts + real-JD calibration
+
+- Added six China labor-baseline facts: social-insurance registration, housing fund, probation limits, overtime pay, annual leave and non-compete limits, with official gov.cn / flk.npc.gov.cn sources.
+- Calibrated metadata extraction on 24 anonymized real AI product-manager JDs; salary, experience, degree and city all matched 24/24.
+- Published the China baseline facts as /data/china-facts.json and linked it from llms.txt.
 
 ### 2026-11-10 — Custom domain + P0 GEO
 

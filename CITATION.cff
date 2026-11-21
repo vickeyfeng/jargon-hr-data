@@ -5,8 +5,8 @@ type: dataset
 authors:
   - name: "Jargon HR"
     website: "https://miaotuijian.cn/"
-date-released: 2026-11-10
+date-released: 2026-11-21
 url: "https://miaotuijian.cn/data/"
 repository-code: "https://github.com/vickeyfeng/jargon-hr-data"
 license: CC-BY-4.0
-abstract: "33-term bilingual glossary, 17 market facts with official sources, and example-report metadata behind the Jargon HR job-description checker."
+abstract: "38-term bilingual glossary, 17 market facts plus six China baseline facts with official sources, and example-report metadata behind the Jargon HR job-description checker."
