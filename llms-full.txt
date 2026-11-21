@@ -262,7 +262,7 @@ JD 信号：“熟练使用 SQL/Python 处理数据。”
 
 前端面试的区分度不在“会不会用框架”，而在复杂场景下的性能、工程化和协作取舍。
 
-一句话结论：前端面试真正考的不是框架 API，而是复杂场景下的性能、工程化与协作取舍。
+一句话结论：前端面试真正考的不是框架 API，而是复杂场景下的性能取舍、工程化方案、跨职能协作边界与技术决策依据。
 
 #### 1. 讲一个你做过的最复杂的前端项目，复杂度来自哪里？
 
@@ -822,19 +822,19 @@ Example: “团队年轻、氛围好” — ask average team tenure, after-hours
 
 ### Jargon HR vs ChatGPT for job-description analysis
 
-ChatGPT is a general reasoning assistant; Jargon HR is a narrow, deterministic JD checker. The useful workflow is usually Jargon HR first for structure, then ChatGPT to rehearse the answers.
+General reasoning assistant versus a narrow, deterministic JD checker. Use Jargon HR to structure the JD first, then ChatGPT to rehearse answers.
 
 Bottom line: Do not treat them as substitutes. Jargon HR gives you the map; ChatGPT is useful for rehearsing the route. Verify any factual claim against the linked source.
 
 ### Jargon HR vs preparing manually
 
-Manual preparation gives better judgment and recall; the tool gives speed, consistency, and a checklist you can audit. Use the tool for triage, then spend the saved time on evidence and rehearsal.
+Manual prep gives better judgment; the tool gives speed, consistency and an auditable checklist. Triage with the tool, then invest saved time in evidence.
 
 Bottom line: The tool is a forcing function, not a replacement for judgment. If the JD is ambiguous, write down what you would need to ask a recruiter.
 
 ### Jargon HR vs resume/JD keyword tools
 
-Resume tools optimize how well your CV matches keywords. Jargon HR reads the role, the company, and the market facts, then tells you what to prepare. They solve different problems.
+Resume tools optimize keyword match; Jargon HR reads the role, company and market facts, then tells you what to prepare. Different problems.
 
 Bottom line: A high keyword match is not a good job. Understand the role first, then optimize the application for the requirements that survived the filter.
 
@@ -853,6 +853,12 @@ License: editorial content; cite Jargon HR and link to the canonical URL. Not le
 Jargon HR is an independent, rule-based tool. Product behavior is deterministic. Editorial pages are drafted with AI assistance and checked against linked official sources. No invented author biographies are published. The site does not provide legal, tax or immigration advice. Corrections: update the source-linked content, rebuild with node scripts/build-static.cjs, and redeploy.
 
 ## Changelog
+
+### 2026-11-21 — Tightened page titles and meta descriptions
+
+- Shortened 17 over-long descriptions and two long example page titles; expanded four under-length descriptions on the home, question index, Chinese example and frontend question pages.
+- Glossary entries can now carry a separate short meta summary; the full definition stays in the body and structured data is unchanged.
+- Public data mirror and llms-full.txt regenerated to match the current site.
 
 ### 2026-11-21 — Five added Chinese job-market terms
 
