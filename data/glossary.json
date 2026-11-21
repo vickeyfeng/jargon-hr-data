@@ -113,8 +113,10 @@
       "category": "Scoring",
       "definition": "A nice-to-have is a preferred signal that is not expected to be met by every qualified candidate.",
       "zhDef": "不是每个合格候选人都必须具备的偏好项。",
-      "why": "It should not dominate prep time; it matters as a tie-breaker after hard gates and core skills.",
-      "example": "“DDD experience” or “payments background” is usually a plus, not a gate.",
+      "why": "It should not dominate prep time; after hard gates and core skills are covered, it works as a tie-breaker that can separate otherwise matched candidates.",
+      "example": "“DDD experience” or “payments background” is usually a plus, not a gate — worth a supporting example if you have one, not worth a full crash course.",
+      "criteria": "Check whether the JD labels it preferred/plus, whether it appears only once, and whether the same requirement also appears as a gate elsewhere. A plus should not block a qualified candidate, but it can shift a shortlist decision.",
+      "pitfalls": "Do not treat a nice-to-have as a hard gate and over-prep at the expense of core skills; equally, do not ignore it — when two candidates are close, the plus can be the deciding signal.",
       "related": [
         "core-requirement",
         "prep-score"
@@ -143,7 +145,9 @@
       "definition": "An evidence gap means you may have the experience but the JD or your materials contain no concrete proof of it.",
       "zhDef": "可能有经验，但 JD 或你的材料里没有具体证据。",
       "why": "Interviewers ask for examples; a claim without a metric, scope, or trade-off is hard to defend.",
-      "example": "“Worked on Kafka” is weaker than “ran 12 Kafka partitions at 8k events/s with a 200ms p99”.",
+      "example": "“Worked on Kafka” is weaker than “ran 12 Kafka partitions at 8k events/s with a 200ms p99”; the second version shows scope and outcome.",
+      "criteria": "For each claimed skill, look for a metric, a scope, a timeframe, and your own decision or trade-off. If a claim names a tool but no result or ownership, treat it as an evidence gap and prepare backup.",
+      "pitfalls": "Do not confuse familiarity with evidence: having touched a tool once does not prove ownership. Do not paper over the gap with adjectives like “deep” or “strong” — interviewers probe for the concrete example.",
       "related": [
         "articulation-gap",
         "prep-score"
@@ -184,8 +188,10 @@
       "category": "Scoring",
       "definition": "Q is a prior estimate of how likely a requirement is to be probed in an interview, based on its type and how central it is to the role.",
       "zhDef": "某条要求在实际面试中被追问的概率先验。",
-      "why": "Not every line in a JD is tested; Q keeps the prep list from becoming a 40-item slog.",
-      "example": "A hard gate may be checked by HR; a core skill is likely to get a deep technical question.",
+      "why": "Not every line in a JD is tested; Q keeps the prep list from becoming a 40-item slog and focuses time on what is likely to come up.",
+      "example": "A hard gate may be checked by HR at screening; a core skill is likely to get a deep technical question; a logistics line rarely leaves the offer stage.",
+      "criteria": "Weight Q by requirement type and centrality: hard gates are often checked at HR screening, core skills face deep questions, preferences and logistics are rarely probed. Judge how central each line is to the role's title and daily work.",
+      "pitfalls": "Do not assign high Q to every JD line — a long list mixes gates, core skills and nice-to-haves. Do not downplay a core skill merely because it reads casually in the posting.",
       "related": [
         "prep-score",
         "core-requirement"
@@ -284,7 +290,9 @@
       "definition": "RTT (réduction du temps de travail) is extra paid time off earned by employees whose working time exceeds the statutory 35-hour week.",
       "zhDef": "法国每周超过 35 小时法定工时后累积的额外带薪假。",
       "why": "It can add 10–20 days off per year, and it is often omitted from English summaries of the offer.",
-      "example": "A 39-hour contract may come with around 12 RTT days on top of five weeks’ holiday.",
+      "example": "A 39-hour contract may come with around 12 RTT days on top of the statutory five weeks' paid leave.",
+      "criteria": "Check the contractual weekly hours, the 35-hour statutory reference, and how RTT days accrue and carry over. Compare them with congés payés separately; RTT and ordinary vacation are tracked differently.",
+      "pitfalls": "Do not count RTT as ordinary paid vacation or as overtime cash: RTT is compensatory time off for hours above 35, not a wage payment. Do not assume a 39-hour contract carries the same RTT balance at every company.",
       "related": [
         "cdi-cdd",
         "market-pack"
@@ -326,8 +334,10 @@
       "category": "Netherlands",
       "definition": "Vakantiegeld is the Dutch holiday allowance, usually 8% of gross annual salary, typically paid in May or June.",
       "zhDef": "荷兰假期津贴，通常为年薪的 8%，多在 5/6 月发放。",
-      "why": "It is a real part of total compensation and is often left out of English salary comparisons.",
-      "example": "A €60,000 salary plus 8% vakantiegeld is roughly €64,800 gross before other allowances.",
+      "why": "It is a real part of total compensation and is often left out of English-language salary comparisons.",
+      "example": "A €60,000 salary plus 8% vakantiegeld is roughly €64,800 gross before any other allowances.",
+      "criteria": "Confirm the percentage (the Dutch statutory minimum holiday allowance is 8%), the payment month, and whether any 13th-month pay or other allowance sits on top. Check the allowance base too: some bonuses are excluded from it.",
+      "pitfalls": "Do not fold vakantiegeld into monthly salary when comparing offers, and do not assume it is paid monthly — it is typically a once-yearly lump sum, usually in May or June.",
       "related": [
         "cao",
         "30-percent-ruling"
@@ -397,8 +407,10 @@
       "category": "US",
       "definition": "A 401(k) is a US employer-sponsored retirement account; employer matching is part of compensation but often vests over time.",
       "zhDef": "美国雇主提供的退休账户；雇主 match 属于薪酬，但通常有归属期。",
-      "why": "Match and vesting can add meaningful value that a base-salary comparison misses.",
-      "example": "A 5% match on a $150,000 salary is $7,500 a year before growth.",
+      "why": "Employer match and vesting can add meaningful retirement value that a base-salary-only comparison misses.",
+      "example": "A 5% match on a $150,000 salary is $7,500 a year before investment growth; whether you keep it depends on the vesting schedule.",
+      "criteria": "Compare the match percentage, vesting schedule (cliff versus graded), employee contribution cap, and whether the match is made per pay period or held to year-end. These determine how much retirement value an offer actually carries.",
+      "pitfalls": "Do not equate a high headline match with fully vested money: an unvested match can be forfeited on departure. Do not compare total compensation on base salary alone, which omits match and employer-side benefits.",
       "related": [
         "w2-1099",
         "at-will"
@@ -467,8 +479,10 @@
       "category": "China",
       "definition": "大小周 is a schedule that alternates a five-day week and a six-day week, usually without extra pay.",
       "zhDef": "一周双休、一周单休交替的工作节奏，通常没有额外报酬。",
-      "why": "It adds roughly two extra working days a month and is a concrete workload signal.",
-      "example": "“大小周” means you should ask which weeks are six-day and whether overtime is paid.",
+      "why": "It adds roughly two extra working days a month on average and is a concrete workload signal that base salary or job title alone won't show.",
+      "example": "“大小周” means you should ask which weeks are six-day, whether the Saturday work is paid at the statutory overtime rate, and whether it can be compensated with time off in lieu.",
+      "criteria": "Check the schedule in writing: how many six-day weeks per cycle, which Saturdays are required, whether overtime is paid, and whether extra rest can be rolled over. A fixed alternating cadence is the core of 大小周; flexible arrangements are a different pattern.",
+      "pitfalls": "Do not read “one Saturday duty a month” as 大小周, and do not equate “flexible hours” with it: flexible working time still needs a defined weekly rest, while 大小周 fixes an alternating five-day/six-day rhythm.",
       "related": [
         "kangya",
         "wuxian-yijin"
